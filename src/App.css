@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cup {
+  width: 128px;
+  height: 160px;
+  border: 4px solid white;
+  border-radius: 0 0 16px 16px;
+  background-color: #2a2a3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3b82f6;
+  transition: height 0.075s linear;
+  border-radius: 0 0 16px 16px;
+}
+
+.percentage {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.score{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.status{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.instructions {
+  color: #999;
+  font-size: 0.875rem;
+}
