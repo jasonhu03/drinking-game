@@ -57,7 +57,75 @@ body {
   font-weight: bold;
 }
 
+.timer{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.lives-counter {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+}
+
+.heart {
+  width: 40px;
+  height: 40px;
+}
+
 .instructions {
   color: #999;
   font-size: 0.875rem;
+}
+
+.game-over-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.game-over-content {
+  background-color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+}
+
+.game-over-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.game-over-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.game-over-content button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.game-over-content button:hover {
+  background-color: #45a049;
 }
